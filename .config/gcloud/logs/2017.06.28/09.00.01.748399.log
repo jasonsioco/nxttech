@@ -1,0 +1,78 @@
+2017-06-28 09:00:01,751 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2017-06-28 09:00:01,753 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'print_access_token']
+2017-06-28 09:00:01,754 DEBUG    root            Running [gcloud.auth.print-access-token] with arguments: []
+2017-06-28 09:00:01,754 ERROR    ___FILE_ONLY___ Handling the source of a tool exception, original details follow.
+2017-06-28 09:00:01,754 ERROR    ___FILE_ONLY___ You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials, or if you have already logged in with a
+different account:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+Traceback (most recent call last):
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 119, in TryFunc
+    return func(*args, **kwargs)
+  File "/google/google-cloud-sdk/lib/surface/auth/print_access_token.py", line 40, in Run
+    cred = c_store.Load(args.account)
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 248, in Load
+    raise NoActiveAccountException()
+NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials, or if you have already logged in with a
+different account:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2017-06-28 09:00:01,755 DEBUG    root            (gcloud.auth.print-access-token) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials, or if you have already logged in with a
+different account:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+Traceback (most recent call last):
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 798, in Execute
+    resources = args.calliope_command.Run(cli=self, args=args)
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 871, in Run
+    resources = command_instance.Run(args)
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py", line 119, in TryFunc
+    return func(*args, **kwargs)
+  File "/google/google-cloud-sdk/lib/surface/auth/print_access_token.py", line 40, in Run
+    cred = c_store.Load(args.account)
+  File "/google/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 248, in Load
+    raise NoActiveAccountException()
+ToolException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials, or if you have already logged in with a
+different account:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2017-06-28 09:00:01,756 ERROR    root            (gcloud.auth.print-access-token) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials, or if you have already logged in with a
+different account:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2017-06-28 09:00:01,762 DEBUG    root            Metrics reporting process started...
